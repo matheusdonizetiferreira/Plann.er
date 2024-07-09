@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   ActivityIndicatorBase,
   TouchableOpacityProps,
+  Pressable,
 } from "react-native";
 
 import clsx from "clsx";
@@ -26,7 +27,7 @@ function Button({
   ...rest
 }: ButtonProps) {
   return (
-    <TouchableOpacity
+    <Pressable
       className={clsx(
         "w-full h-11 flex-row items-center justify-center rounded-lg gap-2",
         {
@@ -45,7 +46,7 @@ function Button({
           children
         )}
       </ThemeContext.Provider>
-    </TouchableOpacity>
+    </Pressable>
   )
 }
 
